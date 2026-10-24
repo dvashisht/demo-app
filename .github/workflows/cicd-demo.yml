@@ -37,7 +37,7 @@ jobs:
       - name: Deploy to temporary staging
         run: |
           mkdir -p staging
-          cp artifacts/demo-app.tar.gz -C staging/
+          cp artifacts/demo-app.tar.gz staging/
           tar -xzf staging/demo-app.tar.gz -C staging
           echo "PASS - package extracted to staging"
       
